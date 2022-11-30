@@ -13,9 +13,9 @@ const Categories = () => {
         }}
     >
         {/* Category cards */}
-        <CategoryCard imgUrl = 'https://links.papareact.com/wru' title='Testing 1'/>
-        <CategoryCard imgUrl = 'https://links.papareact.com/wru' title='Testing 2'/>
-        <CategoryCard imgUrl = 'https://links.papareact.com/wru' title='Testing 3'/>
+        <CategoryCard imgUrl = 'https://links.papareact.com/gn7' title='Testing 1'/>
+        <CategoryCard imgUrl = 'https://links.papareact.com/gn7' title='Testing 2'/>
+        <CategoryCard imgUrl = 'https://links.papareact.com/gn7' title='Testing 3'/>
         
     </ScrollView>
   )

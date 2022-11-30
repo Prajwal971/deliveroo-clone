@@ -8,6 +8,7 @@ import {
     AdjustmentsVerticalIcon
 } from "react-native-heroicons/outline";
 import Categories from '../components/Categories';
+import FeaturedRow from '../components/FeaturedRow';
 
 const HomeScreen = () => {
     const navigation = useNavigation()
@@ -54,12 +55,28 @@ const HomeScreen = () => {
             <ScrollView
                 className="bg-gray-100"
                 contentContainerStyle={{
-                    paddingBottom:100,
+                    paddingBottom: 100,
                 }}
             >
                 {/* categories */}
-                    <Categories/>
+                <Categories />
+
                 {/* Featured */}
+                <FeaturedRow
+                    id='1'
+                    title="Featured"
+                    description="paod placement from out partners"
+                />
+                <FeaturedRow
+                    id='2'
+                    title="tasty Discounts"
+                    description="paod placement from out partners"
+                />
+                <FeaturedRow
+                    id='3'
+                    title="Offers near you!"
+                    description="paod placement from out partners"
+                />
             </ScrollView>
 
         </SafeAreaView>
