@@ -1,5 +1,5 @@
 import { View, Text, ScrollView } from 'react-native'
-import React from 'react'
+import React,{useEffect} from 'react'
 import { ArrowRightIcon } from 'react-native-heroicons/outline'
 import RestaurantCard from './RestaurantCard'
 
