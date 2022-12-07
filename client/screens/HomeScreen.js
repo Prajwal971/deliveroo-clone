@@ -21,7 +21,7 @@ const HomeScreen = () => {
         })
     }, [])
 
-    console.log(featuredCategories)
+    // console.log(featuredCategories)
 
     useEffect(() => {
         sanityClient.fetch(`
