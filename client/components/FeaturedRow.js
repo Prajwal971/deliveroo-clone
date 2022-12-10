@@ -43,6 +43,7 @@ const FeaturedRow = ({ id, title, description }) => {
                 showsHorizontalScrollIndicator={false}
                 className="pt-4"
             >
+                {/* Restraunts cards */}
                 {restaurants?.map((restaurant) => (
                     <RestaurantCard
                         key={restaurant._id}
@@ -59,58 +60,8 @@ const FeaturedRow = ({ id, title, description }) => {
                     />
                 ))}
 
-                {/* Restraunts cards */}
-                {/* <RestaurantCard
-                    id={1}
-                    imgUrl={'https://links.papareact.com/gn7'}
-                    title='Yo! Sushi'
-                    rating={4.5}
-                    genre="Japanese"
-                    address='123 Main St'
-                    short_description="This is a Test description"
-                    dishes={[]}
-                    long={20}
-                    lat={20}
-                />
 
-                <RestaurantCard
-                    id={1}
-                    imgUrl={'https://links.papareact.com/gn7'}
-                    title='Yo! Sushi'
-                    rating={4.5}
-                    genre="Japanese"
-                    address='123 Main St'
-                    short_description="This is a Test description"
-                    dishes={[]}
-                    long={20}
-                    lat={20}
-                />
 
-                <RestaurantCard
-                    id={1}
-                    imgUrl={'https://links.papareact.com/gn7'}
-                    title='Yo! Sushi'
-                    rating={4.5}
-                    genre="Japanese"
-                    address='123 Main St'
-                    short_description="This is a Test description"
-                    dishes={[]}
-                    long={20}
-                    lat={20}
-                />
-
-                <RestaurantCard
-                    id={1}
-                    imgUrl={'https://links.papareact.com/gn7'}
-                    title='Yo! Sushi'
-                    rating={4.5}
-                    genre="Japanese"
-                    address='123 Main St'
-                    short_description="This is a Test description"
-                    dishes={[]}
-                    long={20}
-                    lat={20}
-                /> */}
             </ScrollView>
         </View>
     )
