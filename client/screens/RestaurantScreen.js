@@ -73,7 +73,7 @@ const RestaurantScreen = () => {
             </View>
 
             <View>
-                <Text className="'px-6 mb-3 font-bold text-xl">Menu </Text>
+                <Text className="px-6 pt-5 mb-3 font-bold text-xl">Menu </Text>
                 {/* Dishes Row  */}
                 {dishes.map(dish => (
                     <DishRow
