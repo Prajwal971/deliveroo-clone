@@ -14,14 +14,14 @@ const Stack = createNativeStackNavigator()
 export default function App() {
   return (
     <NavigationContainer>
-      <Provider store={store}> 
+      <Provider store={store}>
         <Stack.Navigator>
           <Stack.Screen name='Home' component={HomeScreen} />
           <Stack.Screen name='Restaurant' component={RestaurantScreen} />
-          <Stack.Screen name='Basket' component={BasketScreen} 
+          <Stack.Screen name='Basket' component={BasketScreen}
             options={{
-              presentation:'modal',
-              headerShown:false
+              presentation: 'transparentModal',
+              headerShown: false,
             }}
           />
         </Stack.Navigator>
