@@ -39,4 +39,7 @@ export const selectBasketItems = (state) => state.basket.items;
 // Or check the ID of pressed item --- check/filter it --- if itemsID of the pressed item are equal then only increment
 export const selectBasketItemsWithId = (state, id) => state.basket.items.filter((item) => item.id === id);
 
+// create another helper function for another selector with reduce()) for getting total price
+export const selectBasketTotal = (state) => state.basket.items.reduce((total, item) => total += item.price, 0)
+
 export default basketSlice.reducer
