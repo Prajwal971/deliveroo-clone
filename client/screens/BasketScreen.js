@@ -25,8 +25,7 @@ const BasketScreen = () => {
         setGroupedItemsInBasket(groupedItems)
     }, [items])
 
-    console.log(groupedItemsInBasket)
-    console.log("----------------")
+    
     return (
         <SafeAreaView className=" flex-1 bg-white  rounded-xl pt-1.5 mt-8">
             <View className="flex-1 bg-gray-100">
