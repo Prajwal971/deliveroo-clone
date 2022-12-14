@@ -7,6 +7,7 @@ import { removeFromBasket, selectBasketItems, selectBasketTotal } from '../featu
 import { XCircleIcon } from 'react-native-heroicons/outline';
 import { urlFor } from '../sanity';
 import Currency from "react-currency-formatter";
+import PreparingOrderScreen from './PreparingOrderScreen';
 
 const BasketScreen = () => {
     const navigation = useNavigation();
@@ -94,9 +95,9 @@ const BasketScreen = () => {
                         <Text className="font-extrabold"><Currency quantity={basketTotal + 5.99} currency="INR" /></Text>
                     </View>
 
-                        <TouchableOpacity className="rounded-lg bg-[#00CCBB] p-4">
-                            <Text className="text-lg font-bold text-center text-white">Place Order</Text>
-                        </TouchableOpacity>
+                    <TouchableOpacity className="rounded-lg bg-[#00CCBB] p-4" onPress={() => navigation.navigate('PreparingOrderScreen')}>
+                        <Text className="text-lg font-bold text-center text-white">Place Order</Text>
+                    </TouchableOpacity>
 
                 </View>
 
